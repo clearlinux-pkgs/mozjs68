@@ -1,0 +1,14 @@
+diff --git a/config/rules.mk b/config/rules.mk
+index 15946d86b0..9b1a7da268 100644
+--- a/config/rules.mk
++++ b/config/rules.mk
+@@ -335,6 +335,9 @@ endif
+ endif
+ EXTRA_DEPS += $(SYMBOLS_FILE)
+ endif
++
++EXTRA_DSO_LDOPTS += -Wl,-soname,lib$(JS_LIBRARY_NAME).so.0
++
+ #
+ # GNU doesn't have path length limitation
+ #
