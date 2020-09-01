@@ -2,9 +2,9 @@
 # Inspired by the Arch Linux equivalent package.....
 #
 Name     : mozjs68
-Version  : 68.6.0
-Release  : 1
-Source0  : https://archive.mozilla.org/pub/firefox/releases/68.6.0esr/source/firefox-68.6.0esr.source.tar.xz
+Version  : 68.12.0
+Release  : 2
+Source0  : https://archive.mozilla.org/pub/firefox/releases/68.12.0esr/source/firefox-68.12.0esr.source.tar.xz
 Group    : Development/Tools
 License  : Apache-2.0 BSD-2-Clause BSD-3-Clause BSD-3-Clause-Clear GPL-2.0 LGPL-2.0 LGPL-2.1 MIT MPL-2.0-no-copyleft-exception
 Requires: mozjs68-bin
@@ -75,7 +75,7 @@ lib components for the mozjs68 package.
 
 
 %prep
-%setup -q -n firefox-68.6.0
+%setup -q -n firefox-68.12.0
 
 %patch1 -p1
 %patch2 -p1
@@ -159,4 +159,3 @@ cp %{buildroot}/usr/lib64/libmozjs-68.so %{buildroot}/usr/lib64/libmozjs-68.so.0
 %defattr(-,root,root,-)
 /usr/lib64/libmozjs-68.so
 /usr/lib64/libmozjs-68.so.0
-
